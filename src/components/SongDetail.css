@@ -1,0 +1,31 @@
+.song-details{
+  font-family: 'Open Sans Condensed', sans-serif;
+  display: flex;
+  padding: 4px;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  background-color: white;
+}
+
+.info{
+  padding: 4px;
+  width: 100%
+}
+.artwork{
+  width: 170px;
+  background-color: white;
+}
+
+.song-title{
+  font-size: 30px;
+}
+
+.artist{
+  font-size: 20px;
+}
+
+.button2{
+  width:60px;
+}

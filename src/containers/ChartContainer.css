@@ -1,6 +1,7 @@
 .chart-container{
-  width: 40%;
-  background-color: blue;
+  font-family: 'Open Sans Condensed', sans-serif;
+  width: 20%;
+  background-color: white;
   padding:2px;
   border-style: solid;
   border-width: 2px;
