@@ -27,7 +27,7 @@ class ItunesContainer extends Component{
 
   handlePressPlay(url){
     this.setState({play: !this.state.play})
-    console.log(this.state.play)
+    // console.log(this.state.play)
   }
 
   componentDidMount(){
@@ -40,7 +40,7 @@ class ItunesContainer extends Component{
   render(){
     if (!this.state.top20) return null
     // console.log(this.state.top20)
-    console.log(this.state.selectedSong)
+    // console.log(this.state.selectedSong)
     return (
       <div className="itunes-container">
       <Header />
