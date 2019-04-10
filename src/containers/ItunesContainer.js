@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import ChartContainer from './ChartContainer.js'
+import Header from '../components/Header.js'
+import Footer from '../components/Footer.js'
 
 class ItunesContainer extends Component{
 
@@ -22,7 +24,9 @@ class ItunesContainer extends Component{
     console.log(this.state.top20)
     return (
       <div className="itunes-container">
+      <Header />
       <ChartContainer top20={this.state.top20}/>
+      <Footer />
       </div>
     )
   }

@@ -7,7 +7,6 @@ const ChartContainer = ({top20}) => {
     return <ChartItem key={index+1} position={index+1} artist={entry['im:artist'].label} title={entry['im:name'].label} />
   })
 
-  console.log(charts)
   return(
     <div className="chart-container">
     {charts}

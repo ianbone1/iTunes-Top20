@@ -1,3 +1,7 @@
 li{
   list-style: none;
 }
+
+.chart-container{
+  padding:10%;
+}
