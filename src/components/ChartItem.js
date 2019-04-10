@@ -1,7 +1,6 @@
 import React from 'react'
 import './ChartItem.css'
-const ChartItem = ({position, title, artist})=>{
-
+const ChartItem = ({position, title, artist, handleSelectSong})=>{
 
   return(
     <div className="chart-item">
@@ -10,7 +9,7 @@ const ChartItem = ({position, title, artist})=>{
           {position}
         </div>
         <div className="song-title">
-          {title}
+          <button onClick={()=>handleSelectSong(position)}>{title}</button>
         </div>
        </div>
        <div className="song-artist">

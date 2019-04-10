@@ -1,10 +1,10 @@
 import React from 'react'
 import ChartItem from '../components/ChartItem.js'
 import './ChartContainer.css'
-const ChartContainer = ({top20}) => {
+const ChartContainer = ({top20, handleSelectSong}) => {
 
   const charts = top20.map((entry, index)=>{
-    return <ChartItem key={index+1} position={index+1} artist={entry['im:artist'].label} title={entry['im:name'].label} />
+    return <ChartItem key={index+1} position={index+1} artist={entry['im:artist'].label} title={entry['im:name'].label} handleSelectSong={handleSelectSong}/>
   })
 
   return(

@@ -2,14 +2,24 @@ import React, {Component} from 'react'
 import ChartContainer from './ChartContainer.js'
 import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
+import SongDetail from '../components/SongDetail.js'
+
+import './ItunesContainer.css'
 
 class ItunesContainer extends Component{
 
   constructor(props){
     super(props)
     this.state={
-      top20:null
+      top20:null,
+      selectedSong: null
     }
+    this.handleSelectSong = this.handleSelectSong.bind(this)
+  }
+
+  handleSelectSong(position){
+    // this.setState({selectedSong: this.state.top20[position]})
+    console.log(position)
   }
 
   componentDidMount(){
@@ -22,10 +32,14 @@ class ItunesContainer extends Component{
   render(){
     if (!this.state.top20) return null
     console.log(this.state.top20)
+    console.log(this.state.selectedSong)
     return (
       <div className="itunes-container">
       <Header />
-      <ChartContainer top20={this.state.top20}/>
+      <div className="main-page">
+        <ChartContainer top20={this.state.top20} handleSelectSong={this.handleSelectSong}/>
+        <SongDetail />
+      </div>
       <Footer />
       </div>
     )
